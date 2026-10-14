@@ -1,0 +1,136 @@
+/* ==========================================================================
+   1. CSS O'ZGARUVCHILARI VA ASOSIY PALITRA (Qo'shimcha ball uchun)
+   ========================================================================== */
+:root {
+    --asosiy-rang: #1f3a5f;      /* HEX yozuvi */
+    --ikkinchi-rang: #d97706;    /* To'q sariq aksent (HEX) */
+    --fon-rangi: #f8fafc;        /* Ochiq fon (HEX) */
+    --matn-rangi: rgb(30, 41, 59); /* RGB yozuvi */
+    --oq-rang: white;            /* Rang nomi (keyword) */
+    --chegara-rangi: rgba(31, 58, 95, 0.15); /* RGBA yozuvi */
+}
+
+/* ==========================================================================
+   2. UMUMIY MATN VA SAHIFA USLUBLARI (Teg selektori, B4, B6, B7)
+   ========================================================================== */
+body {
+    background-color: var(--fon-rangi);
+    color: var(--matn-rangi);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   3. SARLAVHALAR (Guruhlangan selektor, B2, B7, B8)
+   ========================================================================== */
+h1 {
+    color: var(--asosiy-rang);
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Guruhlangan selektor */
+h2, h3 {
+    color: var(--asosiy-rang);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   4. MATN VA PARAGRAFLAR (B1, B5, B7, B8)
+   ========================================================================== */
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Class selektori (B1) */
+.izoh {
+    color: #475569;
+    font-size: 14px;
+    font-style: italic;
+}
+
+blockquote {
+    color: var(--asosiy-rang);
+    font-style: italic;
+    font-weight: 500;
+    background-color: rgba(31, 58, 95, 0.05);
+}
+
+mark {
+    background-color: #fef08a;
+    color: #854d0e;
+    font-weight: 500;
+}
+
+/* Maxsus identifikator selektori (B1) */
+#aloqa {
+    color: var(--ikkinchi-rang);
+    text-transform: capitalize;
+}
+
+#muallif {
+    color: var(--asosiy-rang);
+}
+
+/* Atamalar ro'yxati (dl, dt, dd) */
+dt {
+    font-weight: 700;
+    color: var(--asosiy-rang);
+}
+
+dd {
+    font-style: normal;
+}
+
+/* ==========================================================================
+   5. HAVOLALAR VA NAVIGATSIYA (Avlod selektori, B2, B9)
+   ========================================================================== */
+/* Avlod selektori: nav a */
+nav a {
+    color: var(--asosiy-rang);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+/* Barcha havolalar holati (a, a:hover, a:visited) */
+a {
+    color: var(--asosiy-rang);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #6b21a8;
+}
+
+a:hover {
+    color: var(--ikkinchi-rang);
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   6. FOOTER MATNLARI
+   ========================================================================== */
+footer p {
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+}
